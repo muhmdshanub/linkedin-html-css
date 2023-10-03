@@ -845,7 +845,7 @@ input[type="radio"] {
 }
 
 .sixth-row-first {
-    width: 33%;
+    width: 38%;
     margin-top: 100px;
     padding-left: 12%;
     background-color: #f3f2f0;
@@ -925,12 +925,14 @@ input[type="radio"] {
 .sixth-row-second {
     width: 50%;
     overflow: hidden;
+    
 }
 
 .sixth-row-second img {
     width: 100%;
     height: auto;
     margin-left: 18%;
+   
 }
 
 .seventh-row {
