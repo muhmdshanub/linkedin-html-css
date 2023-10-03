@@ -2,602 +2,433 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="icon" sizes="192x192" href="/assets/instagram-favicon.png"
-    data-default-icon="/assets/instagram-favicon.png">
-  <link rel="stylesheet" href="./styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/5b938571dd.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Linked in</title>
 </head>
 
 <body>
-  <div class="left-sidebar">
-    <div class="upper-container">
-      <img src="assets/insta-written.png" alt="Instagram" class="logo">
-      <img class="logo2" src="./assets/insta-logo.png" />
-      <div class="home-link">
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <div class="header-logo-first">
+                    <a href="index.html">Linked</a>
+                </div>
+                <div class="header-logo-second">
+                    <a href="index.html">in</a>
+                </div>
+            </div>
+            <div class="innerlink-club">
+                <div class="inner-links">
+                    <a href="articles.html">
+                        <div class="icon-container">
+                            <i class="fa-regular fa-newspaper"></i>
+                        </div>
+                        <div class="text-container">
+                            <span>Articles</span>
+                        </div>
 
-        <a href="#"><img class="home-link-img" src="./assets/home.png" /><span class="link-text">Home</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><i class="fas fa-search"></i><span class="link-text">Search</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/explore.png" /><span class="link-text">Explore</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/reels.png" /><span class="link-text">Reels</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/messenger.png" /><span class="link-text">Messages</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/heart.png" /><span class="link-text">Notifications</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/create.png" /><span class="link-text">Create</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/profile.png" /><span class="link-text">Profile</span></a>
-      </div>
+                    </a>
+                </div>
+
+                <div class="inner-links">
+                    <a href="people.html">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <div class="text-container">
+                            <span>People</span>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="inner-links">
+                    <a href="learning.html">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-file-audio"></i>
+                        </div>
+                        <div class="text-container">
+                            <span>Learning</span>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="inner-links">
+                    <a href="jobs.html">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="text-container">
+                            <span>Jobs</span>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div class="app-icon-club">
+                <div class="line"></div>
+                <div class="app-icon">
+                    <a href="jobs.html">
+                        <div class="app-icon-container">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <div class="app-text-container">
+                            <span>Get the app</span>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="login-buttons">
+                <a href="join-now.html">
+                    <button class="join-now-button">Join Now</button>
+                </a>
+                <a href="sign-in.html">
+                    <button class="sign-in-button">Sign In</button>
+                </a>
+            </div>
+
+        </div>
+        <div class="rows">
+            <div class="first-row">
+                <div class="login-form-block">
+                    <p class="main-sentence">Find jobs through your<br> community</p>
+                    <form class="login-form" action="">
+                        <label for="emailOrPhone">Email or phone</label>
+                        <input type="text" id="emailOrPhone" name="emailOrPhone" placeholder="" required>
+
+                        <label for="password">Password</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" placeholder="" required minlength="6">
+
+                        </div>
+
+                        <a href="forgot.password.html" class="forgot-password-link">Forgot password?</a>
+                        <button type="submit" class="submit-btn">Sign in</button>
+                    </form>
+                    <div class="or-seperator">
+                        <div class="or-line"></div>
+                        <div class="or-word">
+                            <h4>or</h4>
+                        </div>
+                        <div class="or-line"></div>
+                    </div>
+                    <div class="other-login-">
+                        <div>
+                            <button class="google-login-btn">Continue with google</button>
+                        </div>
+                        <div>
+                            <button class="join-btn">New to Linkedin? Join now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-image">
+                    <img src="images/image_1.svg" alt="" class="image">
+                </div>
+            </div>
+            <!--second row [collab and find] -->
+            <div class="second-row">
+                <div class="second-row-collab">
+                    <div class="second-row-collab-text">
+                        <div class="second-row-collab-text1">
+                            <p>Explore<br>collaborative<br>articles</p>
+                        </div>
+                        <div class="second-row-collab-text2">
+                            <p>We’re unlocking community knowledge in a new<br>way. Experts add insights directly into
+                                each<br>article, started with the help of AI.</p>
+                        </div>
+                    </div>
+
+                    <div class="second-row-collab-buttons">
+                        <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Public Administration</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">IT Services</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Business Administration</a></li>
+                            <li><a href="#">Telecommunications</a></li>
+                            <li><a href="#">HR Management</a></li>
+                            <li><a href="">Show all</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="second-row-find">
+                    <div class="second-row-find-text">
+                        <p>Find the right job or<br>internship for you</p>
+                    </div>
+                    <div class="second-row-find-buttons">
+                        <h2 class="second-row-find-buttons-heading">SUGGESTED SEARCHES</h2>
+                        <input type="checkbox" id="show-more-toggle" class="show-more-toggle">
+                        <ul>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">Business Development</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Administrative Assistant</a></li>
+                            <li><a href="#">Administrative Assistant</a></li>
+                            <li><a href="#">Retail Associate</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Operations</a></li>
+                            <li><a href="#">Information Technology</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Human Resources</a></li>
+                            <li><a href="#">Healthcare Service</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Program and Project Management</a></li>
+                            <li><a href="#">Accounting</a></li>
+                            <li><a href="#">Arts and Design</a></li>
+                            <li><a href="#">Community and Social Services</a></li>
+                            <li><a href="#">Consulting</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Entrepreneurship</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Media and Communications</a></li>
+                            <li><a href="#">Military and Protective Services</a></li>
+                            <li><a href="#">Product Management</a></li>
+                            <li><a href="#">Purchasing</a></li>
+                            <li><a href="#">Quality Assurance</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">AdministrativeShow less</a></li>
+                        </ul>
+                        <label for="show-more-toggle" class="show-more-label">Show More <i
+                                class="fa-solid fa-chevron-down"></i></label>
+                        <label for="show-more-toggle" class="show-less-label">Show Less <i
+                                class="fa-solid fa-chevron-up"></i></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="third-row">
+                <div class="third-row-text">
+                    <h2>Post your job for<br> millions of people to<br> see</h2>
+                </div>
+                <div class="third-row-button">
+                    <a href="#">Post a job</a>
+                </div>
+            </div>
+            <div class="fourth-row">
+                <div class="fourth-row-display">
+                    <input type="radio" id="set1" name="sets" checked>
+                    <input type="radio" id="set2" name="sets">
+                    <input type="radio" id="set3" name="sets">
+
+                    <div class="set set1">
+                        <div class="set-parts">
+                            <div class="set-text">
+                                <h2>Let the right people know you’re open to work</h2>
+                                <p>With the Open To Work feature, you can privately tell recruiters or publicly
+                                    share with the LinkedIn community that you are looking for new job
+                                    opportunities.</p>
+                            </div>
+                            <div class="set-image-box">
+                                <img src="images/image_set1.png" class="set-image">
+                                <label for="set2" class="next-label"> &gt; </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="set set2">
+                        <div class="set-parts">
+
+                            <div class="set-text">
+                                <label for="set1" class="prev-label">&lt;</label>
+                                <h2>Conversations today could lead to opportunity tomorrow</h2>
+                                <p>Sending messages to people you know is a great way to strengthen relationships as you
+                                    take the next step in your career.</p>
+                            </div>
+                            <div class="set-image-box">
+                                <img src="images/image_set2.png" class="set-image">
+                                <label for="set3" class="next-label">&gt;</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="set set3">
+                        <div class="set-parts">
+
+                            <div class="set-text">
+                                <label for="set2" class="prev-label">&lt;</label>
+                                <h2>Stay up to date on your industry</h2>
+                                <p>From live videos, to stories, to newsletters and more, LinkedIn is full of ways to
+                                    stay up to date on the latest discussions in your industry.</p>
+                            </div>
+                            <div class="set-image-box">
+                                <img src="images/image_set3.png" class="set-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fifth-row">
+                <div class="fifth-row-connect">
+                    <div class="fifth-row-img-box">
+                        <img src="images/fifthrow_1.svg" class="fifth-row-img">
+                    </div>
+                    <div class="fifth-row-text">
+                        <h2>Connect with people who can help</h2>
+                        <a href="#">Find people you know</a>
+                    </div>
+                </div>
+                <div class="fifth-row-learn">
+                    <div class="fifth-row-img-box">
+                        <img src="images/fifthrow_2.svg" class="fifth-row-img">
+                    </div>
+                    <div class="fifth-row-text">
+                        <h2>Learn the skills you need to succeed</h2>
+                        <div class="fifth-row-custom-dropdown">
+                            <input type="checkbox" id="fifth-row-dropdown-toggle" class="fifth-row-dropdown-toggle">
+                            <label for="fifth-row-dropdown-toggle" class="fifth-row-dropdown-button">Choose a topic to
+                                learn about <i class="fa-solid fa-sort-down"></i></label>
+                            <div class="fifth-row-dropdown-content">
+                                <div class="fifth-row-popup">
+                                    <a href="#">Business anlyst and strategy<br><span>930+ courses</span></a>
+                                    <a href="#">Busineess software and tools<br><span>2060+ courses</span></a>
+                                    <a href="#">Career Development<br><span>560+ courses</span></a>
+                                    <a href="#">Customer service<br><span>190+ courses</span></a>
+                                    <a href="#">Diversity and equity and inclusion<br><span>250+ courses</span></a>
+                                    <a href="#">Finance and accounting<br><span>290+ courses</span></a>
+                                    <a href="#">Human resources<br><span>480+ courses</span></a>
+                                    <a href="#">Leadership and management<br><span>1520+ courses</span></a>
+                                    <a href="#">Marketing<br><span>960+ courses</span></a>
+                                    <a href="#">Professional development<br><span>1640+ courses</span></a>
+                                    <a href="#">Project Management<br><span>440+ courses</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sixth-row">
+                <div class="sixth-row-first">
+                    <h2>Who is LinkedIn for?</h2>
+                    <h3>Anyone looking to navigate their professional life.</h3>
+                    <ul class="sixth-row-list">
+                        <li><a href="#"><span>Find a coworker or a classmate</span><i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a href="#"><span>Find a new job</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a href="#"><span>Find a course or training</span> <i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sixth-row-second">
+                    <img src="images/sixth_row.jpg" alt="">
+                </div>
+            </div>
+            <div class="seventh-row">
+                <div class="seventh-row-first-half">
+                    <iframe width="500" height="378" src="https://www.youtube.com/embed/IlYUUN8rL_Y"
+                        title="Gayatri Iyer: In it to chase my dream | #InItTogether" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="seventh-row-second-half">
+                    <h2>In it to chase my dream</h2>
+                    <h3>Check out Gayatri’s story of finding a new job on LinkedIn</h3>
+                </div>
+            </div>
+            <div class="eighth-row">
+                <div class="eighth-elements">
+                    <h2>Join your colleagues, classmates, and friends on LinkedIn.</h2>
+                    <a href="#">Get started</a>
+                </div>
+            </div>
+            <div class="nineth-row">
+                <div class="nineth-row-inner">
+                    <span class="nineth-row-inner-text1">Linked</span><span class="nineth-row-inner-text2">in</span>
+                </div>
+                <div class="nineth-row-inner">
+                    <p>General</p>
+                    <ul class="nineth-row-list">
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Developers</a></li>
+
+                    </ul>
+                </div>
+                <div class="nineth-row-inner">
+                    <p>Browse Linkedin</p>
+                    <ul class="nineth-row-list">
+                        <li><a href="#">Learning</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Salary</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </div>
+                <div class="nineth-row-inner">
+                    <p>Business Solution</p>
+                    <ul class="nineth-row-list">
+                        <li><a href="#">Talent</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Learning</a></li>
+                    </ul>
+                </div>
+                <div class="nineth-row-inner">
+                    <p>Directories</p>
+                    <ul class="nineth-row-list">
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Companies</a></li>
+                        <li><a href="">Featured</a></li>
+                        <li><a href="#">Learning</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">Article</a></li>
+                        <li><a href="#">Schools</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">News Letters</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Advice</a></li>
+                        <li><a href="#">People Search</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer">
+                <ul class="footer-contents">
+                    <li><span class="footer-text1">Linked</span><span class="footer-text2">in</span></li>
+                    <li><a href="#">© 2023</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Brand Policy</a></li>
+                    <li><a href="">Guest Controls</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                    <li><a href="#" class="footer-language">Language<i class="fa-solid fa-chevron-down"></i></a></li>
+                </ul>
+            </div>
+        </div>
 
 
     </div>
-    <div class="bottom-container">
-      <div class="links">
-        <a href="https://www.threads.net/login"><img src="./assets/threads.svg" /><span
-            class="link-text">Threads</span></a>
-      </div>
-      <div class="links">
-        <a href="#"><img src="./assets/more.svg" /><span class="link-text">Home</span></a>
-      </div>
-    </div>
-  </div>
 
-  <div class="bottom-navbar">
-    <a href="#"><img class="nav-bar-img" src="./assets/home.png" /></a>
-    <a href="#"><img class="nav-bar-img" src="./assets/explore.png" /></a>
-    <a href="#"><img class="nav-bar-img" src="./assets/reels.png" /></a>
-    <a href="#"><img class="nav-bar-img" src="./assets/create.png" /></a>
-    <a href="#"><img class="nav-bar-img" src="./assets/messenger.png" /></a>
-    <a href="#"><img class="nav-bar-img" src="./assets/profile.png" /></a>
-
-
-
-  </div>
-  <div class="main-container">
-    <div class="story-newsfeed-container">
-      <div class="story-container">
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-        <div class="story">
-          <div class="gradient-bg">
-            <img src="assets/story_image.png" alt="Profile picture">
-          </div>
-          <h6>muhmd_shanub</h6>
-        </div>
-      </div>
-      <div class="newsfeed-container">
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header">
-            <div class="post-info-flex">
-              <img src="assets/profile.png" alt="Profile Picture" class="profile-pic">
-              <p>muhmd_shanub</p>
-              <ul>
-                <li class="list-time">3h</li>
-              </ul>
-            </div>
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-          <img src="assets/post.png" alt="Post Image" class="post-img">
-          <div class="post-icons">
-            <div class="post-icons-left">
-              <i data-feather="heart"></i>
-              <i data-feather="message-circle"></i>
-              <i data-feather="send"></i>
-            </div>
-            <i data-feather="bookmark"></i>
-          </div>
-          <p class="likes">35 likes</p>
-          <p class="caption">@Username hi guys...</p>
-          <a href="#" class="comments">View all comments</a>
-          <div class="input-comment">
-            <div class="input-box">
-              <input type="text" placeholder="Add a comment">
-            </div>
-            <div class="post-button">
-              <span>Post</span>
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    
-  </div>
-  <div class="profile-suggestions">
-    <div class="profile-container">
-      <div class="profile">
-        <img
-          src="./assets/profile.png"
-          alt="Profile Picture"
-        />
-        <div class="profile-info">
-          <strong>muhmd_shanub</strong>
-          <span class="profile-info-name">Muhammed Shanoob AK</span>
-        </div>
-      </div>
-      <div class="switch">Switch</div>
-    </div>
-    <div class="suggestion-header">
-      <p>Suggestions for you</p>
-      <a href="#">See All</a>
-    </div>
-    <div class="suggestion-list">
-      <div class="suggestion-container">
-        <div class="suggestion-profile">
-          <img
-            src="./assets/profile.png"
-            alt="Profile Picture"
-          />
-          <div class="suggestion-profile-info">
-            <strong>muhmd_shanub</strong>
-            <span class="profile-info-name">Mark welsh and 6 others....</span>
-          </div>
-        </div>
-        <div class="follow">follow</div>
-      </div>
-      <div class="suggestion-container">
-        <div class="suggestion-profile">
-          <img
-            src="./assets/profile.png"
-            alt="Profile Picture"
-          />
-          <div class="suggestion-profile-info">
-            <strong>muhmd_shanub</strong>
-            <span class="profile-info-name">Mark welsh and 6 others....</span>
-          </div>
-        </div>
-        <div class="follow">follow</div>
-      </div>
-      <div class="suggestion-container">
-        <div class="suggestion-profile">
-          <img
-            src="./assets/profile.png"
-            alt="Profile Picture"
-          />
-          <div class="suggestion-profile-info">
-            <strong>muhmd_shanub</strong>
-            <span class="profile-info-name">Mark welsh and 6 others....</span>
-          </div>
-        </div>
-        <div class="follow">follow</div>
-      </div>
-      <div class="suggestion-container">
-        <div class="suggestion-profile">
-          <img
-            src="./assets/profile.png"
-            alt="Profile Picture"
-          />
-          <div class="suggestion-profile-info">
-            <strong>muhmd_shanub</strong>
-            <span class="profile-info-name">Mark welsh and 6 others....</span>
-          </div>
-        </div>
-        <div class="follow">follow</div>
-      </div>
-    </div>
-    <div class="rest-data">
-      <ul class="profile-list">
-        <li>About</li>
-        <li>Help</li>
-        <li>Press</li>
-        <li>API</li>
-        <li>Jobs</li>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Locations</li>
-        <li>Language</li>
-        <li>English</li>
-      </ul>
-
-      <p>© 2023 INSTAGRAM FROM META</p>
-    </div>
-  </div>
-
-  
-  <script>
-    feather.replace();
-  </script>
 </body>
 
 </html>

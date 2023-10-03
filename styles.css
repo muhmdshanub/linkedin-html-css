@@ -1,532 +1,1127 @@
-:root {
-    --clear-white: #ffffff;
-    --white: #f5f5f5;
-    --black: #000;
-    --grey: #262626;
-    --light-grey: #a8a8a8;
-    --blue: #0095f6;
-    --hover-white: rgb(251, 240, 240);
-    --line-black: #e4e4e4;
+.container {
+    margin: 0 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+
 }
 
-html,
-body {
-    scroll-behavior: smooth;
-    background-color: var(--clear-white);
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-        Arial, sans-serif;
-    color: var(--black);
-    overflow-x: hidden;
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    color: #fff;
     display: flex;
-    width: 100vw;
+    align-items: center;
 }
 
-a {
-    color: var(--black);
+.header-logo {
+    width: 44%;
+    padding-left: 12%;
+    display: flex;
+
+}
+
+.header-logo-first {
+
+    background-color: white;
+}
+
+.header-logo-second {
+
+    background-color: hwb(217 1% 0%);
+    border-radius: 5px;
+
+}
+
+.header-logo-first a {
+    color: hwb(217 1% 0%);
+    text-decoration: none;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+
+    font-size: 30px;
+}
+
+.header-logo-second a {
+    text-decoration: none;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.innerlink-club {
+    width: 21%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inner-links {
+    margin-right: 12%;
+}
+
+.inner-links a {
+    text-decoration: none;
+    color: rgb(58, 53, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-links a:hover {
+    color: #020202;
+}
+
+.inner-links a .icon-container {
+    font-size: 25px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+.inner-links a .text-container {
+    font-size: 12px;
+}
+
+.app-icon-club {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.line {
+    width: 1px;
+    height: 50px;
+    background-color: #000;
+    margin: 0 10%;
+}
+
+.app-icon a {
+    text-decoration: none;
+    color: rgb(58, 53, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-icon a:hover {
+    color: #020202;
+}
+
+.app-icon a .app-icon-container {
+    font-size: 30px;
+    margin-right: 1%;
+    margin-bottom: 0px;
+}
+
+.app-icon a .app-text-container {
+    font-size: 12px;
+}
+
+
+.login-buttons {
+    width: 28%;
+    display: flex;
+}
+
+.sign-in-button {
+    background-color: #ffffff;
+    color: #3681ee;
+    border: 1px solid blue;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    ;
+    padding: 15px 25px;
+
+
+}
+
+.sign-in-button:hover {
+    background-color: #f2f2f2;
+}
+
+.join-now-button {
+    background-color: #ffffff;
+    color: #3681ee;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    ;
+    padding: 15px 25px;
+
+
+}
+
+.join-now-button:hover {
+    background-color: #fcf2f2;
+}
+
+
+.fa {
+    font-family: FontAwesome;
+}
+
+.rows {
+    width: 100%;
+    display: block;
+}
+
+.first-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.login-form-block {
+    width: 38%;
+    margin-left: 12%;
+    flex: 1;
+}
+
+.main-sentence {
+    font-size: 42px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #8f5849;
+
+}
+
+
+
+.login-form {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#emailOrPhone {
+    width: 85%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.password-input {
+    position: relative;
+    width: 88%;
+    display: flex;
+    align-items: center;
+}
+
+#password {
+    width: 85%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    /* Increased padding for the toggle container */
+}
+
+
+
+#password:hover {
+    background-color: #ccc;
+}
+
+
+
+
+#emailOrPhone:hover {
+    background-color: #ccc;
+}
+
+
+.forgot-password-link {
+
+    color: #0077b5;
     text-decoration: none;
 }
 
-a:hover {
-    opacity: 0.8;
-}
 
-.left-sidebar {
+.forgot-password-link:hover {
 
-    width: 15%;
-    height: 100vh;
-    position: fixed;
-    border-right: 1px solid var(--line-black);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
-
-}
-
-.upper-container {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
-    gap: 1rem;
-    padding: 1rem;
-
-}
-
-.bottom-container {
-    padding: 1rem;
-}
-
-.logo {
-    color: var(--black);
-    width: 102px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    height: 1.8rem;
-}
-
-.logo2 {
-    display: none;
-}
-
-.home-link a {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0;
-    color: var(--black);
-    font-size: 1rem;
-    font-weight: 550;
-}
-
-.home-link-img {
-    height: 1.8rem;
-    margin-right: 1rem;
-
-}
-
-.links a {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0.2rem;
-    color: var(--black);
-    font-size: 1rem;
-
-}
-
-.links a:hover,
-.home-link a:hover {
-    background-color: var(--hover-white);
-    border: none;
-    border-radius: 5px;
-}
-
-.links i {
-    height: 1.5rem;
-    margin-right: 1.6rem;
-
-
-}
-
-.links img {
-    height: 1.2rem;
-    margin-right: 1.6rem;
-}
-
-.bottom-navbar {
-    display: none;
-}
-
-.main-container {
-    width: 62.5%;
-    display: block;
-    margin-left: 15%;
-    min-height: 100vh;
-    height: auto;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.story-newsfeed-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    width: 100%;
-}
-
-.story-container {
-
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    overflow-x: auto;
-    padding: 0 20px;
-    gap: .2rem;
-
-}
-
-.story {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-family: Arial, sans-serif;
-
-}
-
-.story h6 {
-    margin: 0.5rem 0rem;
-    font-size: 0.65rem;
-    text-align: center;
-}
-
-.gradient-bg {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle at 30% 107%,
-            #fdf497 0%,
-            #fdf497 5%,
-            #fd5949 45%,
-            #d6249f 60%,
-            #285aeb 90%);
-    padding: 2px;
-}
-
-.gradient-bg img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid var(--white);
-}
-
-.newsfeed-container {
-
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.post {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 65%;
-}
-
-.post-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.post-info-flex {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-   
-}
-
-.profile-pic {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.post-info-flex p {
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-.list-time {
-    font-size: 0.7rem;
-    margin: 0;
-}
-
-
-.post-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.post-icons {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-}
-
-.post-icons:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.post-icons-left {
-    display: flex;
-    justify-content: flex-start;
-    gap: 0.35rem;
-    align-items: center;
-}
-
-.likes,
-.caption,
-.comments {
-    margin: 0.35rem 0;
-    font-size: 0.8rem;
-}
-
-.comments {
-    color: var(--light-grey);
-}
-
-.input-comment {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.input-wrapper {
-    flex: 1;
-    margin-right: 8px;
-}
-
-.input-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    padding: 0;
-    font-size: 14px;
-}
-
-.post-button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: #0077b5;
-    font-weight: 300;
-}
-
-.post-button i {
-    margin-left: 4px;
-    color: rgb(180, 178, 178);
-}
-
-.profile-suggestions{
-    width:22.5%;
-    padding: 20px 0;
-    margin-right: 1rem;
-    
-}
-
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .profile {
-    display: flex;
-    align-items: center;
-  }
-
-  .profile img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    margin-right: 0.75rem;
-  }
-  .profile-info {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8rem;
-  }
-
-  .profile-info-name {
-    color: var(--light-grey);
-    margin: 0.2rem 0rem;
-  }
-
-  .switch {
-    color: var(--blue);
-    cursor: pointer;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-
-  .suggestion-header{
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 0 20px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .suggestion-header p{
-    color:var(--light-grey)
-  }
-  .suggestion-header a:hover{
-    color: var(--grey);
-  }
-
-  .suggestion-list{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding: 0 20px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  .suggestion-container{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    padding-bottom:10px;
-  }
-  .suggestion-profile{
-    display: flex;
-    align-items: center;
-  }
-
-  .suggestion-profile img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    margin-right: 0.75rem;
-  }
-
-  .suggestion-profile-info {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8rem;
-  }
-
-  .suggestion-profile-info-name {
-    color: var(--light-grey);
-    margin: 0.2rem 0rem;
-  }
-
-  .follow {
-    color: var(--blue);
-    cursor: pointer;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-  .follow:hover{
-    color: #3e0189;
-  }
-
-  .rest-data{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding: 0 20px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  .rest-data ul{
-font-weight: 400;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 1rem;
-  row-gap: 0.35rem;
-  font-size: 0.8rem;
-  padding-left: 0rem;
-  color: var(--light-grey);
-  margin-bottom: 0;
-  }
-
-  .rest-data ul:hover{
     text-decoration: underline;
-  }
-
-  .rest-data p{
-    margin: 1rem 0; 
-    font-size: 0.8rem; 
-    color: var(--light-grey);
-  }
-@media screen and (max-width:1100px) {
-    .profile-suggestions{
-        display:none;
-    }
 }
 
-@media screen and (max-width:900px) {
-    .left-sidebar {
-        width: 60px;
-    }
-
-    .upper-container,
-    .bottom-container {
-        align-items: center;
-    }
-
-    .links .link-text,
-    .home-link .link-text {
-        display: none;
-    }
-
-    .links a {
-        padding-left: 1.2rem;
-    }
-
-    .home-link a {
-        padding-left: 0.65rem;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .logo2 {
-        display: block;
-        width: 2rem;
-        margin-left: 5px;
-        margin: 1rem 0rem;
-    }
-
-    .main-container{
-        width:90%;
-        margin:auto;
-    }
+.submit-btn {
+    display: block;
+    width: 85%;
+    background-color: #0077b5;
+    color: #fff;
+    margin-top: 10px;
+    padding: 11px;
+    border-radius: 20px;
+    border: none;
 
 }
 
-@media screen and (max-width:600px) {
-    .left-sidebar {
-        display: none;
-    }
+.submit-btn:hover {
+    background-color: #1904fe;
 
-    .bottom-navbar {
-        position: fixed;
-        background-color: #ffffff;
-        bottom: 0;
-        left: 1rem;
-        width: 90%;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 1px solid var(--grey);
-        height: 30px;
-        margin: auto;
-        z-index: 1000;
-    }
 
-    .nav-bar-img {
-        height: 1.2rem;
-        margin-right: 1.6rem;
-    }
-    .story-container, .newsfeed-container{
-        width:90%;
-        margin:auto;
-        padding: 0rem 0rem;
-    }
+}
+
+.or-seperator {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+
+}
+
+.or-line {
+    width: 185px;
+    height: 1px;
+    background-color: #000;
+
+}
+
+.or-word {
+    color: #000;
+    padding: 0 10px;
+}
+
+.google-login-btn {
+    display: block;
+    width: 85%;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding: 9px;
+    border-radius: 20px;
+    border: 1px solid rgb(250, 211, 211);
+
+}
+
+.google-login-btn:hover {
+    background-color: hsl(180, 28%, 92%);
+
+
+}
+
+.join-btn {
+    display: block;
+    width: 85%;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding: 11px;
+    border-radius: 20px;
+    border: 1px solid rgb(57, 56, 56);
+
+}
+
+.join-btn:hover {
+    background-color: hsl(180, 20%, 97%);
+
+
+}
+
+.first-image {
+    margin-left: 150px;
+    margin-top: 120px;
+    max-width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 700px;
+    /* Set a maximum width if needed */
+}
+
+.second-row {
+    width: 100%;
+    display: block;
+
+}
+
+.second-row-collab {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.second-row-collab-text {
+    width: 38%;
+    margin-left: 12%;
+    display: block;
+}
+
+.second-row-collab-text1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.second-row-collab-text2 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.second-row-collab-buttons {
+    width: 38%;
+    margin-right:12%;
+
+}
+
+.second-row-collab-buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 90px;
+    padding: 0;
+}
+
+.second-row-collab-buttons li {
+    margin: 5px;
+
+}
+
+.second-row-collab-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: hsla(0, 0%, 0%, 0.9);
+    background-color: #fff;
+    border: 1px solid #000;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 15px;
+    line-height: 1.75;
+    height: 28px;
+
+
+}
+
+.second-row-collab-buttons a:hover {
+    background-color: #f6f4f4f0;
+    color: rgb(0, 0, 0);
+    ;
+
+}
+
+.second-row-find {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+
+}
+
+.second-row-find-text {
+    width: 38%;
+    margin-left: 12%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+
+}
+
+.second-row-find-buttons {
+    width: 38%;
+    margin-right: 12%;
+}
+
+.second-row-find-buttons-heading {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+}
+
+.second-row-find-buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.second-row-find-buttons li {
+    margin: 5px;
+
+}
+
+.second-row-find-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: hsla(0, 0%, 0%, 0.9);
+    background-color: #fff;
+    border: 1px solid #000;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 15px;
+    line-height: 1.75;
+    height: 28px;
+
+
+}
+
+.second-row-find-buttons a:hover {
+    background-color: #f6f4f4f0;
+    color: rgb(0, 0, 0);
+    ;
+
+}
+
+/* Hide the default checkbox */
+.show-more-toggle {
+    display: none;
+}
+
+/* Hide the second half of the list by default */
+.second-row-find-buttons ul li:nth-child(n + 6) {
+    display: none;
+}
+
+
+/* Style the "Show More" label */
+.second-row-find-buttons .show-more-label,
+.second-row-find-buttons .show-less-label {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    /* Remove underline */
+    text-align: center;
+    color: hsla(0, 0%, 0%, 0.9);
+    background-color: #fff;
+    border: 1px solid #000;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 15px;
+    line-height: 1.75;
+    height: 28px;
+    margin: 5px;
+}
+
+/* Use :checked to show the second half of the list */
+.show-more-toggle:checked~ul li:nth-child(n + 6) {
+    display: block;
+}
+
+/* Show the "Show Less" label when "Show More" is checked and change label */
+.show-more-toggle:checked~.show-more-label {
+    display: none;
+}
+
+/* Show the "Show Less" label when "Show More" is checked */
+.show-more-toggle:checked~.show-less-label {
+    display: inline-block;
+}
+
+/* Hide the "Show Less" label when "Show More" is unchecked */
+.show-more-toggle:not(:checked)~.show-less-label {
+    display: none;
+}
+
+.third-row {
+    width: 100%;
+    display: flex;
+    background-color: #f1ece5;
+}
+
+.third-row-text {
+    margin-left: 12%;
+    width: 38%;
+}
+
+.third-row-text h2 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 350;
+    color: #b24020;
+}
+
+third-row-button {
+    width: 50%;
+
+}
+
+.third-row-button a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #0077b5;
+    border: 1px solid #0077b5;
+    background-color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 90px;
+    height: 30px;
+    line-height: 1.9;
+}
+
+.third-row-button a:hover {
+    background-color: #eeeeee;
+    color: rgb(37, 57, 232);
+    ;
+
+}
+
+.fourth-row {
+    width: 100%;
+    display: flex;
+    background-color: #f3f2f0;
+}
+
+.fourth-row-display {
+    width: 100%;
+    margin-left: 12%;
+    margin-right: 12%;
+    display: flex;
+    height: 100vh;
+}
+
+.set {
+    width: 100%;
+    display: none;
+
+}
+
+.set-parts {
+
+    width: 100%;
+    display: flex;
+
+}
+
+.set-text {
+    margin-top: 150px;
+    width: 50%;
+    flex: 1;
+    position: relative;
+    text-align: center;
+    /* Center the label horizontally within the inner container */
+
+
+}
+
+.set-image-box {
+    margin-top: 100px;
+    width: 50%;
+    overflow: hidden;
+    /* Hide any overflowing content */
+    flex: 1;
+    position: relative;
+    text-align: center;
+    /* Center the label horizontally within the inner container */
+
+
+
+}
+
+.set-image {
+    width: 70%;
+    /* Make the image take 100% of the container's width */
+    height: auto;
+    /* Automatically adjust the height to maintain aspect ratio */
+    display: block;
+    /* Remove any extra spacing around the image */
+    float: right;
+    margin-right: 45px;
+}
+
+.set-text h2 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 35px;
+    color: #8f5849;
+    margin: 0;
+}
+
+.set-text p {
+    text-align: left;
+    font-size: 25px;
+    color: #494848;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#set1:checked~.set1,
+#set2:checked~.set2,
+#set3:checked~.set3 {
+    display: block;
+}
+
+.next-label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.prev-label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+
+
+}
+
+.next-label:hover,
+.prev-label:hover {
+    background-color: #000000b4;
+}
+
+.fifth-row {
+    width: 100%;
+    display: flex;
+}
+
+.fifth-row-connect {
+    margin-left: 12%;
+    margin-top: 150px;
+    width: 38%;
+}
+
+.fifth-row-text h2 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.fifth-row-text a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: hsla(0, 0%, 0%, 0.9);
+    background-color: #fff;
+    border: 1px solid #000;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 15px;
+    line-height: 1.75;
+    height: 28px;
+
+
+}
+
+.fifth-row-img-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.fifth-row-img {
+    width: 50%;
+    height: auto;
+    ;
+}
+
+.fifth-row-learn {
+    margin-right: 12%;
+    margin-top: 150px;
+    width: 38%;
+}
+
+/* Style the main container */
+.fifth-row-custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the actual checkbox */
+.fifth-row-dropdown-toggle {
+    display: none;
+}
+
+/* Style the dropdown button */
+.fifth-row-dropdown-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #141414;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.821);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fifth-row-dropdown-button span {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    /* Add spacing between text and arrow */
+}
+
+.fifth-row-dropdown-button i {
+    margin-right: 0px;
+    margin-left: 35px;
+    /* Add spacing between text and arrow */
+}
+
+/* Style the dropdown content (hidden by default) */
+.fifth-row-dropdown-content {
+    position: absolute;
+    top: 100%;
+    /* Position it below the button */
+    left: 0;
+    display: none;
+    background-color: #fff;
+    width: 320px;
+    ;
+    /* Adjust the width as needed */
+    max-height: 200px;
+    /* Add a maximum height and enable vertical scrolling */
+    overflow-y: auto;
+    z-index: 1;
+    /* Ensure it appears above other content */
+}
+
+/* Style each individual link inside the dropdown content */
+.fifth-row-popup a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: left;
+    border: none;
+    color: #333;
+    transition: background-color 0.3s;
+
+
+}
+
+/* Change link background color on hover */
+.fifth-row-popup a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Show dropdown content when the checkbox is checked */
+.fifth-row-dropdown-toggle:checked+.fifth-row-dropdown-button+.fifth-row-dropdown-content {
+    display: block;
+}
+
+.sixth-row {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    display: flex;
+}
+
+.sixth-row-first {
+    width: 33%;
+    margin-top: 100px;
+    padding-left: 12%;
+    background-color: #f3f2f0;
+}
+
+.sixth-row-first h2 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #b24020;
+    margin-right: 6%;
+}
+
+.sixth-row-first h3 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* Reset default list styles */
+.sixth-row-list {
+    margin-right: 25%;
+    list-style: none;
+    padding: 0;
+
+}
+
+/* Style each list item (button) */
+.sixth-row-list li {
+
+    margin-bottom: 20px;
+    /* Adjust spacing between buttons */
+}
+
+/* Style the link (button) */
+.sixth-row-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    /* Adjust button padding as needed */
+    background-color: #eae6df;
+    /* Default background color */
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+    min-width: 150px;
+    /* Set a minimum width for buttons */
+    height: 35px;
+    font-size: 20px;
+    ;
+}
+
+/* Style the link text */
+.sixth-row-list a span {
+    flex-grow: 1;
+    /* Allow text to expand and take remaining space */
+    padding-left: 10px;
+    /* Adjust spacing between icon and text */
+}
+
+/* Style the link icon (using Font Awesome icons in this example) */
+.sixth-row-list a i {
+    margin-left: 10px;
+    /* Adjust spacing between text and icon */
+}
+
+/* Change button background color on hover */
+.sixth-row-list a:hover {
+    background-color: #ccc7bf;
+    /* Darker background color on hover */
+}
+
+.sixth-row-second {
+    width: 50%;
+    overflow: hidden;
+}
+
+.sixth-row-second img {
+    width: 100%;
+    height: auto;
+    margin-left: 18%;
+}
+
+.seventh-row {
+    background-color: #f4faff;
+    width: 100%;
+    display: flex;
+}
+
+.seventh-row-first-half {
+    width: 38%;
+    padding-left: 12%;
+
+
+
+}
+
+.seventh-row-first-half iframe {
+    padding: 200px 0;
+    right: 0;
+
+}
+
+.seventh-row-second-half {
+    width: 38%;
+    margin-right: 12%;
+    padding-top: 300px;
+
+}
+
+.seventh-row-second-half h2 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #b24020;
+    margin-bottom: 1px;
+    padding-bottom: 3px;
+}
+
+.seventh-row-second-half h3 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.eighth-row {
+    background-image: url(images/background_image.png);
+    width: 76%;
+    display: flex;
+    height: 97.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 12%;
+}
+
+.eighth-elements h2 {
+
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.eighth-elements a {
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color: #0066ff;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 15px;
+    line-height: 1.75;
+    height: 28px;
+}
+
+.eighth-elements a:hover {
+    background-color: #040cfe;
+}
+
+.nineth-row {
+    width: 76%;
+    display: flex;
+    padding: 0px 12%;
+    justify-content: space-between;
+    background-color: #f3f2f0;
+
+}
+
+.nineth-row-inner {
+    padding-top: 20px;
+
+}
+
+.nineth-row-inner p {
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nineth-row-inner-text1 {
+    color: #0026ff;
+    /* Text color for text1 */
+    font-size: 35px;
+}
+
+.nineth-row-inner-text2 {
+    color: #ffffff;
+    /* Text color for text2 */
+    background-color: #0026ff;
+    border-radius: 2px;
+    font-size: 35px;
+}
+
+.nineth-row-list {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.nineth-row-list li {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 6px;
+}
+
+.nineth-row-list a {
+    text-decoration: none;
+    color: #7d7360;
+
+}
+
+.nineth-row-list a:hover {
+    text-decoration: underline;
+    color: #007bffed;
+
+}
+
+.footer {
+    width: 76%;
+    display: flex;
+    padding: 0px 12%;
+
+}
+
+.footer-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contents li {
+    text-align: center;
+    padding: 0 7px;
+    padding-bottom: 6px;
+}
+
+.footer-contents a {
+    text-decoration: none;
+    color: #7d7360;
+    font-size: smaller;
+
+}
+
+.footer-contents a:hover {
+    text-decoration: underline;
+    color: #007bffed;
+
+}
+
+.footer-text1 {
+    color: #000000;
+    /* Text color for text1 */
+    font-size: smaller;
+    font-weight: 800;
+}
+
+.footer-text2 {
+    color: #ffffff;
+    /* Text color for text2 */
+    background-color: #000000;
+    border-radius: 2px;
+    font-size: smaller;
+    font-weight: 800;
 }
